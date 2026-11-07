@@ -1,0 +1,10 @@
+include:
+  - board: seeeduino_xiao_ble
+    shield: charybdis_left
+    artifact-name: charybdis-xiao-plus-revG-left
+  - board: seeeduino_xiao_ble
+    shield: charybdis_right
+    artifact-name: charybdis-xiao-plus-revG-right-central
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+    artifact-name: charybdis-xiao-plus-settings-reset

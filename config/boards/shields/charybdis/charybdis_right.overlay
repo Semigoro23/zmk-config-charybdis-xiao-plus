@@ -1,0 +1,83 @@
+/*
+ * Copyright (c) 2020 ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+ 
+#include "charybdis.dtsi"
+#include <dt-bindings/zmk/input_transform.h>
+
+&default_transform {
+    col-offset = <6>;
+}; 
+
+&kscan0 {
+    /* Rev G: C1 D3, C2 D0, C3 D9, C4 D10, C5 D11, C6 D12 */
+    col-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&gpio1 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+};
+
+// trackball bus
+&pinctrl {
+    spi0_default: spi0_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 1, 13)>,
+                <NRF_PSEL(SPIM_MOSI, 1, 7)>,
+                <NRF_PSEL(SPIM_MISO, 1, 7)>;
+        };
+    };
+
+    spi0_sleep: spi0_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 1, 13)>,
+                <NRF_PSEL(SPIM_MOSI, 1, 7)>,
+                <NRF_PSEL(SPIM_MISO, 1, 7)>;
+            low-power-enable;
+        };
+    };
+};
+
+&spi0 {
+    status = "okay";
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi0_default>;
+    pinctrl-1 = <&spi0_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio1 1 GPIO_ACTIVE_LOW>;
+
+    trackball: trackball@0 {
+        status = "okay";
+        compatible = "pixart,pmw3610";
+        reg = <0>;
+        spi-max-frequency = <2000000>;
+        irq-gpios = <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        scroll-layers = <1>;
+        //snipe-layers = <2>;
+      // automouse-layer = <3>;
+    };
+};
+
+
+//RGB bus
+
+
+
+
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        // Match the installed sensor: exchange horizontal and vertical movement.
+        input-processors =
+            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
+            <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP |
+                                    INPUT_TRANSFORM_X_INVERT |
+                                    INPUT_TRANSFORM_Y_INVERT)>;
+    };
+};
+
+

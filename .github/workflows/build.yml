@@ -1,0 +1,14 @@
+name: Build XIAO Plus Rev G firmware
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Rev G wiring
+        run: python3 tools/check_pins.py
+  build:
+    needs: validate
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@edf5c0814fd3ea202e43aad2d68fd32e882a518c

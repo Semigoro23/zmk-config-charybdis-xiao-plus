@@ -1,0 +1,7 @@
+config Y13_XIAO_LOW_CHARGE
+    bool "Keep XIAO charge selector P0.13 high impedance (nominal 50 mA)"
+    default y
+    depends on BOARD_SEEEDUINO_XIAO_BLE
+    help
+      Configure P0.13 as input without pulls. No high-current charging mode.
+      Battery protection and charging completion must be checked on hardware.

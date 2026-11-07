@@ -1,0 +1,4 @@
+name: y13_xiao_plus
+build:
+  cmake: .
+  kconfig: Kconfig

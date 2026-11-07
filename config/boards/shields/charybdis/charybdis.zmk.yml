@@ -1,0 +1,12 @@
+file_format: "1"
+id: charybdis
+name: Charybdis XIAO Plus Rev G
+type: shield
+url: https://github.com/Bastardkb/Charybdis/
+requires: [seeed_xiao]
+features:
+  - keys
+  - pointer
+siblings:
+  - charybdis_left
+  - charybdis_right
