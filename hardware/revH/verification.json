@@ -1,0 +1,64 @@
+{
+  "revision": "H",
+  "orientation": "XIAO component face toward carrier",
+  "height_adjusted_by_user": true,
+  "board_thickness_mm": 1.6,
+  "drc_violations": 0,
+  "unconnected": 0,
+  "pth_hits": 150,
+  "npth_hits": 12,
+  "drills_match_board": true,
+  "archive_sha256": "1ae3135d5cfde983d9c7a302672c3563ce5a44df3ae7156c72d0cbc83ec55e62",
+  "files": [
+    {
+      "name": "Y13-XIAO-revH-inward-B_Cu.gbl",
+      "bytes": 29515,
+      "sha256": "1a2e94118d21912a044bd52ac41845ff95a3d85cc7a960b085dc33bc4663f8ea"
+    },
+    {
+      "name": "Y13-XIAO-revH-inward-B_Mask.gbs",
+      "bytes": 5235,
+      "sha256": "ce2d08ce4c08ae556b4f7700f92e6c305712d91905701463cbc6a87601dfd31f"
+    },
+    {
+      "name": "Y13-XIAO-revH-inward-B_Silkscreen.gbo",
+      "bytes": 21965,
+      "sha256": "ad7f884a7cc234dd52db64e301f9e426f3560ace319a59c77b0973eb47896287"
+    },
+    {
+      "name": "Y13-XIAO-revH-inward-Edge_Cuts.gm1",
+      "bytes": 9100,
+      "sha256": "c340c582057304afc89b433d0c90ff5c2b1681a55a3372dcdf61e817d666931f"
+    },
+    {
+      "name": "Y13-XIAO-revH-inward-F_Cu.gtl",
+      "bytes": 28817,
+      "sha256": "597a6b8c0c59ea77e51bd41d730a70bdb7a82df344a37bc605799b28a2a854ff"
+    },
+    {
+      "name": "Y13-XIAO-revH-inward-F_Mask.gts",
+      "bytes": 4965,
+      "sha256": "19892b2d3932012944bb5e62816d9e14903b038f1ebfb229db102a8aaa44f161"
+    },
+    {
+      "name": "Y13-XIAO-revH-inward-F_Silkscreen.gto",
+      "bytes": 30025,
+      "sha256": "bd6de1a383cb5ddad87e5233ae4a8f856fa567ce6ef7e9519eff1a9eb1faf7b2"
+    },
+    {
+      "name": "Y13-XIAO-revH-inward-job.gbrjob",
+      "bytes": 2595,
+      "sha256": "8db8f4a5bf04b4be2c07d8e83f4e2c468530b072b575397230d5b69cd988dd98"
+    },
+    {
+      "name": "Y13-XIAO-revH-inward-NPTH.drl",
+      "bytes": 556,
+      "sha256": "daa7d366c2bfdbc6528ead93866f53a90c546d1363344d0aca3a9c398a0e52ec"
+    },
+    {
+      "name": "Y13-XIAO-revH-inward-PTH.drl",
+      "bytes": 2968,
+      "sha256": "c74576c13f327875adb226fb904f59a9e0191a4cb3a94a9bd57ada65330be06a"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+** Drc report for Y13-XIAO-revH-inward.kicad_pcb **
+** Created on 2026-11-08T18:50:35+0900 **
+
+** Found 0 DRC violations **
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

@@ -1,0 +1,44 @@
+side,carrier_pin,nrf_gpio,carrier_net,connection_method,xiao_connection,x_mm,y_mm
+L,3V3,,3V3_L,main pin,3V3,126.198087,74.471138
+L,BAT+,,bat_l,required wire,BAT0 (+),138.0,79.5
+L,BAT-,,GND_L,optional ground wire,GND0 (same as GND),128.479999,80.0
+L,D0,P0.02,col2_l,main pin,D0,141.438087,69.391138
+L,D1,P0.03,row1_l,main pin,D1,141.438087,71.931138
+L,D2,P0.28,row2_l,main pin,D2,141.438087,74.471138
+L,D3,P0.29,col1_l,main pin,D3,141.438087,77.011138
+L,D4,P0.04,row3_l,main pin,D4,141.438087,79.551138
+L,D5,P0.05,row4_l,main pin,D5,141.438087,82.091138
+L,D6,P1.11,miso_l,main pin,D6,141.438087,84.631138
+L,D7,P1.12,row5_l,main pin,D7,126.198087,84.631138
+L,D8,P1.13,sc_l,main pin,D8,126.198087,82.091138
+L,D9,P1.14,col3_l,main pin,D9,126.198087,79.551138
+L,D10,P1.15,col4_l,main pin,D10,126.198087,77.011138
+L,D11,P0.15,col5_l,required wire,D11,125.94,94.0
+L,D12,P0.19,col6_l,required wire,D12,128.479999,94.0
+L,D13,P1.01,SPARE_D13_L,required wire,D13,131.02,94.0
+L,D17,P1.03,SPARE_D17_L,required wire,D17,133.56,94.0
+L,D18,P1.05,SPARE_D18_L,required wire,D18,136.1,94.0
+L,GND,,GND_L,main pin,GND,126.198087,71.931138
+L,RESET,,RESET_L,required wire,TP2 (RESET),123.3,80.0
+L,VBUS,,,main pin,VBUS,126.198087,69.391138
+R,3V3,,3V3_R,main pin,3V3,184.673404,74.424505
+R,BAT+,,bat_r,required wire,BAT0 (+),182.7,80.0
+R,BAT-,,GND_R,optional ground wire,GND0 (same as GND),172.54,79.5
+R,D0,P0.02,col2_r,main pin,D0,169.433404,69.344505
+R,D1,P0.03,row1_r,main pin,D1,169.433404,71.884505
+R,D2,P0.28,row2_r,main pin,D2,169.433404,74.424505
+R,D3,P0.29,col1_r,main pin,D3,169.433404,76.964505
+R,D4,P0.04,row3_r,main pin,D4,169.433404,79.504505
+R,D5,P0.05,row4_r,main pin,D5,169.433404,82.044505
+R,D6,P1.11,miso_r,main pin,D6,169.433404,84.584505
+R,D7,P1.12,row5_r,main pin,D7,184.673404,84.584505
+R,D8,P1.13,sc_r,main pin,D8,184.673404,82.044505
+R,D9,P1.14,col3_r,main pin,D9,184.673404,79.504505
+R,D10,P1.15,col4_r,main pin,D10,184.673404,76.964505
+R,D11,P0.15,col5_r,required wire,D11,185.24,94.0
+R,D12,P0.19,col6_r,required wire,D12,182.7,94.0
+R,D13,P1.01,rgb_l,required wire,D13,180.16,94.0
+R,D19,P1.07,mosi_r,required wire,D19,177.62,94.0
+R,GND,,GND_R,main pin,GND,184.673404,71.884505
+R,RESET,,RESET_R,required wire,TP2 (RESET),187.9,80.0
+R,VBUS,,,main pin,VBUS,184.673404,69.344505
