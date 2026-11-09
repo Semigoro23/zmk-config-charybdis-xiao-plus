@@ -1,6 +1,6 @@
 # Charybdis / XIAO nRF52840 Plus / Rev H PCB
 
-Y13 Rev H試作基板とXIAO用ZMK設定。Rev HでもGPIO信号の割当はRev Gから維持しています。左右各XIAO nRF52840 Plus、左エンコーダー、右PMW3610に対応する試作用ファームウェアです。ビルド成功と実機動作確認は別です。実機試験は未実施です。
+Y13 Rev H試作基板とXIAO用ZMK設定。Rev HでもGPIO信号の割当はRev Gから維持しています。左右各XIAO nRF52840 Plus、左エンコーダー、右PMW3610に対応する試作用ファームウェアです。ビルド成功と実機動作確認は別です。実機試験はこれからです。
 本PCBは、もともとnice!nano v2を搭載するPCBをベースに設計しています。nice!nano v2はBluetooth通信に対応していますが、日本の技適認証を取得していないため、日本国内での使用を想定し、技適認証に対応したXIAO nRF52840 Plusへ変更しました。
 
 ## Rev H 基板の発注データ
